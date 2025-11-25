@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Tyuiu.KugaevskijSD.Sprint5.Task3.V26.Lib;
 
 namespace Tyuiu.KugaevskijSD.Sprint5.Task3.V26;
+
     class Program
 {
     static void Main(string[] args)
@@ -35,6 +36,13 @@ namespace Tyuiu.KugaevskijSD.Sprint5.Task3.V26;
         string res = ds.SaveToFileTextData(x);
         Console.WriteLine("Файл:" + res);
         Console.WriteLine("Создан!");
+        Console.ReadKey();
+        
+        var result = ds.SaveToFileTextData(2);
+        string filePath = "OutPutFileTask3.bin";
+        using (BinaryWriter writer = new BinaryWriter(File.Open(filePath, FileMode.Create))) 
+        File.WriteAllText(filePath, result.ToString());
+        Console.WriteLine(result);
         Console.ReadKey();
     }
 }
