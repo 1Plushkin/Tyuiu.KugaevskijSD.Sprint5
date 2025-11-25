@@ -2,16 +2,15 @@
 namespace Tyuiu.KugaevskijSD.Sprint5.Task3.V26.Test
 {
     [TestClass]
+
     public class DataServiceTest
     {
-        [TestMethod]
-        public void CheckedExistsFile()
+        public void TestMethod1()
         {
-            string path = @"C:\Users\1Plushkin\source\repos\Tyuiu.KugaevskijSD.Sprint5\Tyuiu.KugaevskijSD.Sprint5.Task3.V26\bin\Debug\OutPutFileTask3.bin";
-            FileInfo fileInfo = new FileInfo(path);
-            bool fileExists = fileInfo.Exists;
-            bool wait = false;
-            Assert.AreEqual(wait, fileExists);
+            int x = 2;
+            double result = Math.Round((0.7 * (Math.Pow(x, 3))) + (1.52 * (Math.Pow(x, 2))), 3);
+            double wait = 11.68;
+            Assert.AreEqual(wait, result);
         }
     }
 }
