@@ -8,7 +8,7 @@ namespace Tyuiu.KugaevskijSD.Sprint5.Task2.V16.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            string path = @"C:\Users\1Plushkin\source\repos\Tyuiu.KugaevskijSD.Sprint5\OutPutFileTask0.txt";
+            string path = @"C:\Users\1Plushkin\source\repos\Tyuiu.KugaevskijSD.Sprint5\OutPutFileTask2.txt";
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             bool wait = false;
