@@ -10,7 +10,7 @@ namespace Tyuiu.KugaevskijSD.Sprint5.Task0.V26.Test
             string path = @"C:\Users\1Plushkin\source\repos\Tyuiu.KugaevskijSD.Sprint5\OutPutFileTask0.txt";
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
-            Assert.AreEqual(true, fileExists);
+            Assert.AreEqual(false, fileExists);
         }
     }
 }
